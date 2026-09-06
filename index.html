@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>berrywelt – Bubble Tea &amp; Desserts in Freiburg</title>
+<meta name="description" content="berrywelt: neu eröffneter Bubble-Tea- &amp; Dessert-Shop in der Bertoldstraße 61, Freiburg im Breisgau. Website-Entwurf.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&amp;family=Poppins:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ec3d78'/%3E%3Cstop offset='1' stop-color='%236c4fd6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='16' y='20' width='32' height='34' rx='8' fill='url(%23g)'/%3E%3Crect x='12' y='12' width='40' height='10' rx='5' fill='%2334d6ac'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav container">
+    <a href="#top" class="brand">
+      <svg class="cup-icon" viewBox="0 0 64 64" aria-hidden="true">
+        <defs>
+          <linearGradient id="cupGradSmall" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#ec3d78"/>
+            <stop offset="1" stop-color="#6c4fd6"/>
+          </linearGradient>
+        </defs>
+        <rect x="14" y="22" width="36" height="32" rx="9" fill="url(#cupGradSmall)"/>
+        <rect x="10" y="13" width="44" height="10" rx="5" fill="#34d6ac"/>
+        <circle cx="24" cy="42" r="3" fill="#fff8f4" opacity="0.85"/>
+        <circle cx="33" cy="46" r="3" fill="#fff8f4" opacity="0.85"/>
+        <circle cx="41" cy="41" r="3" fill="#fff8f4" opacity="0.85"/>
+        <rect x="29" y="4" width="6" height="13" rx="3" fill="#3a1f3d"/>
+      </svg>
+      berrywelt
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#ueber-uns">Über uns</a></li>
+      <li><a href="#highlights">Highlights</a></li>
+      <li><a href="#kontakt">Standort &amp; Kontakt</a></li>
+    </ul>
+
+    <a href="#kontakt" class="btn btn-primary nav-cta">Kontakt aufnehmen</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" aria-label="Vorstellung">
+    <div class="hero-blobs" aria-hidden="true">
+      <svg viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice">
+        <circle cx="1080" cy="90" r="220" fill="#34d6ac" opacity="0.18"/>
+        <circle cx="120" cy="600" r="260" fill="#ec3d78" opacity="0.14"/>
+        <circle cx="950" cy="560" r="170" fill="#6c4fd6" opacity="0.14"/>
+      </svg>
+    </div>
+
+    <div class="container">
+      <div class="hero-copy">
+        <span class="badge-new"><span class="dot"></span> Neueröffnung in Freiburg</span>
+        <h1>berrywelt</h1>
+        <p class="claim">Fruchtiger Bubble Tea, verspielte Desserts und beste Laune – mitten in der Freiburger Innenstadt. Wir eröffnen neu und freuen uns auf dich!</p>
+        <div class="hero-actions">
+          <a href="#kontakt" class="btn btn-primary">Jetzt Kontakt aufnehmen</a>
+          <a href="#highlights" class="btn btn-ghost">Was uns ausmacht</a>
+        </div>
+        <p class="hero-note"><strong>Bertoldstraße 61, Freiburg im Breisgau</strong> · bislang auf Social Media &amp; NeoTaste zu finden</p>
+      </div>
+
+      <div class="hero-visual">
+        <svg class="cup-large" viewBox="0 0 240 320" role="img" aria-label="Illustration eines Bubble-Tea-Bechers">
+          <defs>
+            <linearGradient id="cupGradLarge" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#ec3d78"/>
+              <stop offset="1" stop-color="#6c4fd6"/>
+            </linearGradient>
+            <linearGradient id="strawGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#3a1f3d"/>
+              <stop offset="1" stop-color="#6b4a6f"/>
+            </linearGradient>
+          </defs>
+
+          <!-- straw -->
+          <rect x="112" y="6" width="16" height="70" rx="8" fill="url(#strawGrad)" transform="rotate(8 120 40)"/>
+
+          <!-- lid -->
+          <rect x="34" y="58" width="172" height="34" rx="17" fill="#34d6ac"/>
+          <rect x="34" y="58" width="172" height="14" rx="7" fill="#ffffff" opacity="0.35"/>
+
+          <!-- cup body -->
+          <path d="M46 96 L194 96 L176 300 Q120 320 64 300 Z" fill="url(#cupGradLarge)"/>
+          <path d="M46 96 L194 96 L189 128 L51 128 Z" fill="#ffffff" opacity="0.18"/>
+
+          <!-- tapioca pearls -->
+          <circle cx="90" cy="250" r="10" fill="#3a1f3d"/>
+          <circle cx="118" cy="270" r="10" fill="#3a1f3d"/>
+          <circle cx="146" cy="248" r="10" fill="#3a1f3d"/>
+          <circle cx="104" cy="228" r="10" fill="#3a1f3d"/>
+          <circle cx="134" cy="222" r="10" fill="#3a1f3d"/>
+
+          <!-- little berries floating around -->
+          <circle cx="30" cy="150" r="12" fill="#ec3d78"/>
+          <circle cx="212" cy="180" r="9" fill="#34d6ac"/>
+          <circle cx="20" cy="220" r="7" fill="#6c4fd6"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ÜBER UNS ================= -->
+  <section id="ueber-uns" aria-labelledby="about-heading">
+    <div class="about container">
+      <div class="about-grid">
+        <div class="about-art" aria-hidden="true">
+          <svg width="280" height="280" viewBox="0 0 280 280">
+            <circle cx="140" cy="140" r="130" fill="#fdeef4"/>
+            <circle cx="90" cy="100" r="26" fill="#ec3d78" opacity="0.85"/>
+            <circle cx="180" cy="90" r="18" fill="#34d6ac" opacity="0.85"/>
+            <circle cx="200" cy="180" r="30" fill="#6c4fd6" opacity="0.85"/>
+            <circle cx="100" cy="200" r="20" fill="#ec3d78" opacity="0.6"/>
+            <circle cx="150" cy="150" r="14" fill="#34d6ac" opacity="0.7"/>
+          </svg>
+        </div>
+        <div class="about-text">
+          <span class="eyebrow">Über uns</span>
+          <h2 id="about-heading">Frisch aufgebrüht, bunt gemixt</h2>
+          <p>berrywelt bringt fruchtig-frischen Bubble Tea und verspielte Desserts nach Freiburg. Bei uns triffst du auf eine bunte Auswahl an Tee- und Fruchtkreationen, die individuell zusammengestellt werden können – von fruchtig-erfrischend bis cremig-süß.</p>
+          <p>Als neu eröffneter Shop mitten in der Stadt legen wir Wert auf frische Zutaten, sorgfältige Zubereitung und eine Prise Verspieltheit in jedem Becher. Schau vorbei und finde deine neue Lieblingskombination.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= HIGHLIGHTS ================= -->
+  <section id="highlights" class="highlights" aria-labelledby="highlights-heading">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Highlights</span>
+        <h2 id="highlights-heading">Was dich bei berrywelt erwartet</h2>
+        <p>Vier gute Gründe, auf einen Sprung vorbeizuschauen.</p>
+      </div>
+
+      <div class="card-grid">
+        <article class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 48 48" aria-hidden="true">
+              <rect x="10" y="16" width="28" height="24" rx="7" fill="#ec3d78"/>
+              <rect x="8" y="10" width="32" height="8" rx="4" fill="#ec3d78"/>
+              <circle cx="18" cy="30" r="2.4" fill="#fff8f4"/>
+              <circle cx="24" cy="34" r="2.4" fill="#fff8f4"/>
+              <circle cx="30" cy="29" r="2.4" fill="#fff8f4"/>
+            </svg>
+          </div>
+          <h3>Bubble-Tea-Vielfalt</h3>
+          <p>Von fruchtig bis cremig – jede Menge Sorten und Toppings zum individuellen Mixen.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 48 48" aria-hidden="true">
+              <path d="M10 30 Q24 12 38 30 Q38 40 24 40 Q10 40 10 30Z" fill="#6c4fd6"/>
+              <circle cx="24" cy="16" r="4" fill="#6c4fd6"/>
+            </svg>
+          </div>
+          <h3>Süße Desserts</h3>
+          <p>Verspielte Naschereien und cremige Kreationen für den kleinen Hunger zwischendurch.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 48 48" aria-hidden="true">
+              <circle cx="24" cy="24" r="14" fill="#34d6ac"/>
+              <path d="M24 14 Q28 20 24 24 Q20 20 24 14Z" fill="#fff8f4"/>
+            </svg>
+          </div>
+          <h3>Frische Zutaten</h3>
+          <p>Sorgfältig ausgewählt und frisch zubereitet – für vollen Geschmack in jedem Schluck.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 48 48" aria-hidden="true">
+              <rect x="8" y="8" width="32" height="32" rx="10" fill="#ec3d78"/>
+              <path d="M16 26 L22 32 L33 19" stroke="#fff8f4" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Neueröffnung mitten in Freiburg</h3>
+          <p>Ganz frisch am Start in der Bertoldstraße – komm vorbei und entdecke berrywelt als Erste·r.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= STANDORT & KONTAKT ================= -->
+  <section id="kontakt" aria-labelledby="contact-heading">
+    <div class="contact container">
+      <div class="contact-inner">
+        <div class="contact-copy">
+          <span class="eyebrow">Standort &amp; Kontakt</span>
+          <h2 id="contact-heading">Besuch uns in Freiburg</h2>
+          <p class="contact-lead">Wir freuen uns auf deinen Besuch – ob spontan auf einen Bubble Tea oder für ein süßes Dessert zwischendurch.</p>
+
+          <ul class="info-list">
+            <li>
+              <span class="info-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 2C7.6 2 4 5.6 4 10c0 6 8 12 8 12s8-6 8-12c0-4.4-3.6-8-8-8Zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z" fill="#ffffff"/></svg>
+              </span>
+              <span>
+                <span class="info-label">Adresse</span>
+                Bertoldstraße 61, Freiburg im Breisgau<br>
+                <a href="https://www.google.com/maps/search/?api=1&amp;query=Bertoldstra%C3%9Fe%2061%2C%20Freiburg%20im%20Breisgau" target="_blank" rel="noopener">Route in Google Maps öffnen</a>
+              </span>
+            </li>
+            <li>
+              <span class="info-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M3 5h18v14H3V5Zm2 2v.01L12 13l7-5.99V7l-7 5L5 7Z" fill="#ffffff"/></svg>
+              </span>
+              <span>
+                <span class="info-label">E-Mail</span>
+                <a href="mailto:hallo@berrywelt.de">hallo@berrywelt.de</a>
+                <br><small style="opacity:0.75;">(Platzhalter-Adresse für diesen Entwurf)</small>
+              </span>
+            </li>
+            <li>
+              <span class="info-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0 8a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm6.4-8.9a1.2 1.2 0 1 1 0-2.4 1.2 1.2 0 0 1 0 2.4ZM17 2H7a5 5 0 0 0-5 5v10a5 5 0 0 0 5 5h10a5 5 0 0 0 5-5V7a5 5 0 0 0-5-5Zm3 15a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v10Z" fill="#ffffff"/></svg>
+              </span>
+              <span>
+                <span class="info-label">Instagram</span>
+                <a href="#" aria-disabled="true">@berrywelt (Link folgt)</a>
+                <br><small style="opacity:0.75;">Platzhalter – aktuell auf Social Media &amp; NeoTaste zu finden</small>
+              </span>
+            </li>
+            <li>
+              <span class="info-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm1 10.6 4.2 2.5-.8 1.3L11 13V6h1.5v6.6Z" fill="#ffffff"/></svg>
+              </span>
+              <span>
+                <span class="info-label">Öffnungszeiten</span>
+                Werden zur Neueröffnung bekanntgegeben – aktuelle Infos auf Social Media &amp; NeoTaste.
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contact-card">
+          <h3 style="color:#fff; margin-bottom:0;">Lust auf berrywelt?</h3>
+          <p style="color:rgba(255,255,255,0.85); margin-bottom:0;">Schreib uns einfach eine kurze Nachricht – wir melden uns zurück.</p>
+          <a href="mailto:hallo@berrywelt.de" class="btn btn-primary">E-Mail schreiben</a>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Bertoldstra%C3%9Fe%2061%2C%20Freiburg%20im%20Breisgau" target="_blank" rel="noopener" class="btn-outline">Anfahrt planen</a>
+          <p class="placeholder-note">Kontaktdaten in diesem Entwurf sind teilweise Platzhalter und dienen der Veranschaulichung.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <strong>© 2026 berrywelt</strong> · Bertoldstraße 61, Freiburg im Breisgau
+    <span class="draft-note">Dies ist ein Website-Entwurf zu Vorstellungszwecken – kein aktiver Webauftritt.</span>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var toggle = document.getElementById('navToggle');
+    var links = document.getElementById('navLinks');
+    if (!toggle || !links) return;
+
+    toggle.addEventListener('click', function () {
+      var isOpen = links.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+
+    links.addEventListener('click', function (e) {
+      if (e.target.tagName === 'A') {
+        links.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+  })();
+</script>
+
+</body>
+</html>
